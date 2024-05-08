@@ -1,0 +1,96 @@
+.secondary-navbar-container {
+  height: fit-content;
+  margin: 0;
+  padding: 0 2vw;
+  background-color: var(--darkmode-background);
+  display: flex;
+  grid-template-columns: 1.5fr 5fr;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 50px;
+  overflow: visible;
+}
+
+.searchbar-container {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar {
+  background-color: var(--darkmode-foreground);
+  border: none;
+  padding: 10px 10px 10px 20px;
+  outline: none;
+  height: 35px;
+  width: 350px;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--darkmode-text);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.searchbar::placeholder {
+  font-style: italic;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="rgb(255, 0, 0)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/></svg>') center / contain no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: var(--darkmode-element); 
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="search"]::-webkit-search-cancel-button:hover {
+    background-color: var(--darkmode-text);
+}
+
+.searchbar-icon {
+  color: var(--darkmode-element);
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.searchbar-icon:hover {
+  color: var(--darkmode-text);
+}
+
+.secondary-navbar-container .nav-link {
+  font-size: .9em;
+  text-decoration: none;
+  color: var(--darkmode-element);
+  transition: color 0.3s ease-in-out;
+}
+
+.secondary-navbar-container .nav-text {
+  font-weight: 500;
+}
+
+.secondary-navbar-container .nav-item {
+  padding-right: 30px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.secondary-navbar-container .nav-link:hover {
+  color: var(--darkmode-text);
+}
+
+.secondary-navbar-container .nav-link.selected  .nav-text {
+  color: var(--darkmode-text);
+}

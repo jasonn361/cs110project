@@ -1,0 +1,8 @@
+.main-content-container {
+  padding-top: 138px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+}

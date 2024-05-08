@@ -1,0 +1,139 @@
+.featured-content-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+  flex: shrink;
+}
+
+.featured-content-body-link {
+  text-decoration: none;
+  color: var(--darkmode-text);
+  font-size: 2em;
+  flex-grow: 0;
+}
+
+.featured-content-body {
+  height: fit-content;
+  display: flex;
+  flex-grow: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  column-gap: 25px;
+}
+
+.featured-content-banner-container {
+  height: 100%;
+}
+
+.featured-content-banner {
+  height: fit-content;
+  width: 698.2px;
+  height: 397.7px;
+  border-radius: 15px;
+  /* border: 1px red solid; */
+  overflow: hidden;
+  background-image: url("https://cdn.cloudflare.steamstatic.com/steam/apps/2215430/header.jpg?t=1714170012");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.featured-content-banner::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-image: linear-gradient(120deg, #a38c60, var(--darkmode-text));
+  filter: blur(50px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.featured-content-body-link:hover .featured-content-banner::before {
+  opacity: 1;
+}
+
+.featured-content-info {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 12.5px;
+}
+
+.featured-gametitle, .featured-price {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.featured-price-container {
+  display: flex;
+  flex-direction: columns;
+  align-items: center;
+  gap: 20px;
+}
+
+.discount {
+  background-color: var(--dark-green-highlight);
+  color: var(--green-highlight);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.discounted {
+  color: var(--green-highlight);
+}
+
+.crossed-out {
+  text-decoration: line-through;
+  color: var(--darkmode-element);
+}
+
+.featured-tag-container {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+}
+
+.featured-tag {
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--darkmode-foreground);
+  font-size: 0.6em;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.image-gallery {
+  display: grid;
+  padding-top: 13.5px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.featured-image {
+  width: 200px;
+  border-radius: 15px;
+  opacity: 50%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.featured-image:hover {
+  opacity: 1;
+}
