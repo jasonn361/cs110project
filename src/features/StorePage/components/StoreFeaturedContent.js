@@ -35,5 +35,3 @@ function StoreFeaturedContent() {
     </div>
   );
 }
-
-export default StoreFeaturedContent;

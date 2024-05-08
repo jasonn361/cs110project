@@ -1,4 +1,4 @@
-import StoreFeaturedContent from './StoreFeaturedContent.js';
+import StoreFeaturedContent from '../../components/StoreFeaturedContent.js';
 import './StoreHome.css';
 
 function StoreHome() {
