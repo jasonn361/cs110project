@@ -6,7 +6,7 @@ function SecondaryMenuBar() {
   return (
     <header className="secondary-navbar-container" role="navigation">
       <SearchBar /> 
-      <div clasName='secondary-navbar-content'>
+      <div className='secondary-navbar-content'>
         <StoreNavList />
       </div>
     </header>

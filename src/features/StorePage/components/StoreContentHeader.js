@@ -22,3 +22,5 @@ function StoreContentHeader() {
     </div>
   );
 }
+
+export default StoreContentHeader;
