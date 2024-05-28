@@ -1,5 +1,5 @@
-import SecondaryMenuBar from '../SecondaryMenuBar/SecondaryNavBar.js'
-import './MenuBar.css'
+import SecondaryMenuBar from '../SecondaryNavBar/SecondaryNavBar.js';
+import './NavBar.css';
 
 function MenuBar() {
   return (
@@ -15,7 +15,7 @@ function MenuBar() {
               <a href="#" className="nav-link selected">
                 <h2 className="nav-text">Store</h2>
                 <span className="nav-icon">
-                  <i className="fa-solid fa-store fa-2xl"></i>
+                  <i className="fa-solid fa-store fa-xl"></i>
                 </span>
               </a>
             </li>
@@ -23,7 +23,7 @@ function MenuBar() {
               <a href="#" className="nav-link">
                 <h2 className="nav-text">Community</h2>
                 <span className="nav-icon">
-                  <i className="fa-solid fa-tag fa-2xl"></i>
+                  <i className="fa-solid fa-tag fa-xl"></i>
                 </span>
               </a>
             </li>
@@ -31,7 +31,7 @@ function MenuBar() {
               <a href="#" className="nav-link">
                 <h2 className="nav-text">Steve</h2>
                 <span className="nav-icon">
-                  <i className="fa-solid fa-user fa-2xl"></i>
+                  <i className="fa-solid fa-user fa-xl"></i>
                 </span>
               </a>
             </li>
@@ -45,7 +45,7 @@ function MenuBar() {
                 <span className="shopping-cart-icon">
                   <i className="fa-solid fa-cart-shopping fa-sm"></i>
                 </span>
-                <span className="number-shopping-cart"></span>
+                <span className="number-shopping-cart">0</span>
               </span>
             </li>
             <li className="nav-item">            
@@ -53,7 +53,7 @@ function MenuBar() {
                 <span className="friend-icon">
                   <i className="fa-solid fa-user-group fa-sm"></i>
                 </span>
-                <span className="number-online"></span>
+                <span className="number-online">0</span>
               </span>
             </li>
             <li className="nav-item">

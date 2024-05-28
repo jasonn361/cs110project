@@ -13,10 +13,10 @@ function StoreContentHeader() {
       </span>
       <span className="content-header-section-right">
         <span className="content-header-icon next">
-          <i className="fa-solid fa-circle-arrow-left fa-2x"></i>
+          <i className="fa-solid fa-circle-arrow-left fa-lg"></i>
         </span>
         <span className="content-header-icon next">
-          <i className="fa-solid fa-circle-arrow-right fa-2x"></i>
+          <i className="fa-solid fa-circle-arrow-right fa-lg"></i>
         </span>
       </span>
     </div>

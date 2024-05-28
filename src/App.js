@@ -1,5 +1,5 @@
 import { StoreHome } from '@/features/StorePage';
-import MenuBar from './components/MenuBar/MenuBar.js';
+import MenuBar from './components/NavBar/NavBar.js';
 import './App.css';
 
 function App() {

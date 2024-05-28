@@ -19,9 +19,9 @@
   display: flex;
   flex-grow: 0;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  column-gap: 25px;
+  column-gap: 15px;
 }
 
 .featured-content-banner-container {
@@ -29,13 +29,11 @@
 }
 
 .featured-content-banner {
-  height: fit-content;
-  width: 698.2px;
-  height: 397.7px;
-  border-radius: 15px;
-  /* border: 1px red solid; */
+  width: calc(465.5px * 1.20);
+  height: calc(265.1px * 1.20);
+  border-radius: 5px;
   overflow: hidden;
-  background-image: url("https://cdn.cloudflare.steamstatic.com/steam/apps/2215430/header.jpg?t=1714170012");
+  background-image: url("https://cdn.cloudflare.steamstatic.com/steam/apps/2215430/header.jpg");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -45,38 +43,36 @@
   overflow: visible;
 }
 
-.featured-content-banner::before {
-  content: '';
-  position: absolute;
-  top: 30px;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  background-image: linear-gradient(120deg, #a38c60, var(--darkmode-text));
-  filter: blur(50px);
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.featured-content-body-link:hover .featured-content-banner::before {
-  opacity: 1;
-}
-
 .featured-content-info {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  border: 2px var(--darkmode-foreground) solid;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  row-gap: 12.5px;
+  align-items: flex-start;
+  row-gap: 10.5px;
 }
 
-.featured-gametitle, .featured-price {
+.featured-gametitle-container {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.featured-gametitle {
   margin: 0;
   padding: 0;
-  font-size: 1em;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.featured-price {
+  margin: 0;
+  padding: 0;
+  font-size: 0.5em;
   font-weight: 500;
 }
 
@@ -84,14 +80,14 @@
   display: flex;
   flex-direction: columns;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .discount {
   background-color: var(--dark-green-highlight);
   color: var(--green-highlight);
-  border-radius: 10px;
-  padding: 5px 10px;
+  border-radius: 3px;
+  padding: 5px 5px;
 }
 
 .discounted {
@@ -112,28 +108,44 @@
 .featured-tag {
   margin: 0;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 3px;
   background-color: var(--darkmode-foreground);
-  font-size: 0.6em;
+  font-size: 0.4em;
   font-weight: 500;
   width: fit-content;
 }
 
 .image-gallery {
   display: grid;
-  padding-top: 13.5px;
-  grid-template-rows: 1fr 1fr;
+  margin-top: 5px;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 7px;
 }
 
 .featured-image {
-  width: 200px;
-  border-radius: 15px;
+  width: 125px;
+  border-radius: 4px;
   opacity: 50%;
   transition: opacity 0.3s ease-in-out;
 }
 
 .featured-image:hover {
   opacity: 1;
+}
+
+@media (max-width: 1030px) {
+  .featured-content-body {
+    height: fit-content;
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 15px;
+  }
+
+  .image-gallery {
+    display: none;
+  }
+
 }

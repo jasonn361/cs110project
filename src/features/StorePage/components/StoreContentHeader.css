@@ -16,7 +16,7 @@
 }
 
 .content-header-link {
-  font-size: 2em;
+  font-size: 1.2em;
   text-decoration: none;
   color: var(--darkmode-text);
   display: flex;
@@ -43,7 +43,7 @@
   margin: 0;
   padding: 0;
   height: fit-content;
-  width: 80px;
+  width: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;

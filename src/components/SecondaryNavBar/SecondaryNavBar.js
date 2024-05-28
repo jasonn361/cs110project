@@ -1,6 +1,6 @@
 import SearchBar from './SearchBar.js';
 import StoreNavList from './StoreNavList.js';
-import './SecondaryMenuBar.css';
+import './SecondaryNavBar.css';
 
 function SecondaryMenuBar() {
   return (

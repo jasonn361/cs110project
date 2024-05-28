@@ -1,0 +1,38 @@
+.secondary-navbar-container {
+  height: fit-content;
+  margin: 0;
+  padding: 0 2vw;
+  background-color: alpha;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 42px;
+  overflow: visible;
+}
+
+.secondary-navbar-container .nav-link {
+  font-size: .9em;
+  text-decoration: none;
+  color: var(--darkmode-element);
+  transition: color 0.3s ease-in-out;
+}
+
+.secondary-navbar-container .nav-text {
+  font-weight: 500;
+}
+
+.secondary-navbar-container .nav-item {
+  padding-right: 30px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.secondary-navbar-container .nav-link:hover {
+  color: var(--darkmode-text);
+}
+
+.secondary-navbar-container .nav-link.selected  .nav-text {
+  color: var(--darkmode-text);
+}
